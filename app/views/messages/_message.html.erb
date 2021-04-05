@@ -1,7 +1,7 @@
 <li>
   <div class="row">
     <div class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>">
-      <%= message.body %>
+      <%#= user.id == message.user_id ? user.username : @conversation.opposed_user(user).username %> <%= message.body %>
     </div>
   </div>
 </li>

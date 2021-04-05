@@ -1,5 +1,5 @@
 MONDAY
-- add friends to buddy list
+- read about ActionCable
 
 
 TUESDAY
@@ -9,6 +9,8 @@ TUESDAY
 - username display with messages sections
 - sent and received messages all appear on left side of window
 - draggable divs
+- footer
+- collapsable sections on buddy list
 
 
 WEDNESDAY
@@ -17,15 +19,13 @@ WEDNESDAY
 - gif API
 - add bio/profile/info
 - send message with Enter key
+- add friends to buddy list
 
 
 RESEARCH
-- ActionCable
 - jobs
-- channels
 - js in rails
 - jquery ui draggable widget
-
 
 
 DONE
