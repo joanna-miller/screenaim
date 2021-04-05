@@ -1,5 +1,7 @@
 App.conversation = App.cable.subscriptions.create("ConversationChannel", {
-  connected: function() {},
+  connected: function() {
+
+  },
   disconnected: function() {},
   received: function(data) {
     var conversation = $('#conversations-list').find("[data-conversation-id='" + data['conversation_id'] + "']");
@@ -35,6 +37,16 @@ App.conversation = App.cable.subscriptions.create("ConversationChannel", {
     });
   }
 });
+
+$(function() {
+  $('.new_message').keypress(function(e){
+    if(e.which == 13){
+      e.preventDefault();
+      $(this).closest('form').submit();
+    }
+  });
+})
+
 $(document).on('submit', '.new_message', function(e) {
   e.preventDefault();
   var values = $(this).serializeArray();

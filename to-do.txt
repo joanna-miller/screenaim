@@ -1,0 +1,39 @@
+MONDAY
+- add friends to buddy list
+
+
+TUESDAY
+- desktop background
+- style like AIM
+- limewire, sims, minesweeper on desktop?
+- username display with messages sections
+- sent and received messages all appear on left side of window
+- draggable divs
+
+
+WEDNESDAY
+- sounds effects (should these go in message_broadcast_job?)
+- away message (active/inactive boolean?)
+- gif API
+- add bio/profile/info
+- send message with Enter key
+
+
+RESEARCH
+- ActionCable
+- jobs
+- channels
+- js in rails
+- jquery ui draggable widget
+
+
+
+DONE
+- real time message send and receive
+- buddy list (currently shows all users in database)
+- devise user authentication
+- online status boolean to user, triggered by sign in/sign out
+- add sign out link
+- show online/not online buddies in different sections
+- add username to sign up and sign in forms
+- add sign up link
