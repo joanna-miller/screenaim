@@ -1,8 +1,13 @@
 <li>
-  <div class="panel panel-default" data-conversation-id="<%= conversation.id %>">
-    <div class="panel-heading title-bar-controls">
-      <%= conversation.opposed_user(user).username %>
-      <%= link_to '<button aria-label="Close"></button>'.html_safe, close_conversation_path(conversation), remote: true, method: :post %>
+  <div class="panel panel-default chat-window" data-conversation-id="<%= conversation.id %>">
+    <div class="panel-heading title-bar">
+      <h3 class="panel-title title-bar-text">
+        <%= conversation.opposed_user(user).username %></h3>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <%= link_to '<button aria-label="Close"></button>'.html_safe, close_conversation_path(conversation), remote: true, method: :post %>
+        </div>
     </div>
 
     <div class="panel-body" style="display: none;">
@@ -14,9 +19,9 @@
         <form class="new_message">
           <input name="conversation_id" type="hidden" value="<%= conversation.id %>">
           <input name="user_id" type="hidden" value="<%= user.id %>">
-          <textarea name="body" class="form-control"></textarea>
-          <input type="submit" class="btn btn-success" value="Send">
-      </form>
+          <textarea name="body" class="form-control"></textarea><input type="submit" class="btn btn-success pull-right" value="Send">
+          
+        </form>
     </div>
   </div>
 </li>

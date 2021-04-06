@@ -3,13 +3,13 @@ MONDAY
 
 
 TUESDAY
-- style like AIM
-- limewire, sims, minesweeper on desktop?
-- username display with messages sections
-- sent and received messages all appear on left side of window
-- draggable chat windows
-- footer
-- collapsable sections on buddy list
+✓ - style like AIM
+ - limewire, sims, minesweeper on desktop?
+ - username display with messages sections
+✓ - sent and received messages all appear on left side of window
+ - draggable chat windows
+✓ - footer
+✓ - collapsable sections on buddy list
 
 
 WEDNESDAY

@@ -1,7 +1,10 @@
 <li>
   <div class="row">
     <div class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>">
-      <%#= user.id == message.user_id ? user.username : @conversation.opposed_user(user).username %> <%= message.body %>
+    <%= user.id == message.user_id ? "#{user.username}:" : "#{Message.get_opposed_user(user.id, message.conversation_id)}:" %>  <%= message.body %>
     </div>
   </div>
 </li>
+
+
+
