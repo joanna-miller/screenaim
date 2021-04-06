@@ -4,7 +4,7 @@
     <title>ScreenAIM</title>
     <%= csrf_meta_tags %>
     <%#= csp_meta_tag %>
-
+    <%= stylesheet_link_tag 'application', 'https://unpkg.com/xp.css' %>
     <%= stylesheet_link_tag    'application', media: 'all'  %>
     <%= javascript_include_tag 'application' %>
   </head>
@@ -50,10 +50,6 @@
         }
       };
     </script>
-    <div class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-    </div>
   </body>
+  <footer class="footer"><%= image_tag "start_button.png" %><span id="time"><%= Time.now.strftime("%I:%M %p")%></span></footer>
 </html>

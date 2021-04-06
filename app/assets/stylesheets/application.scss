@@ -8,6 +8,7 @@
 @import "bootstrap";
 
 body {
+  font-family: Trebuchet MS;
   background: asset_url("windows_field.jpg") fixed;
 
   /* Full height */
@@ -46,7 +47,6 @@ ul {
   overflow-x: hidden;
 }
 
-
 .message-sent {
   position: relative;
   background-color: #D9EDF7;
@@ -56,7 +56,6 @@ ul {
   float: right;
 }
 
-
 .message-received {
   background-color: #F1F0F0;
   border-color: #EEEEEE;
@@ -65,31 +64,64 @@ ul {
   float: left;
 }
 
-/* Place the navbar at the bottom of the page, and make it stick */
-.navbar {
-  background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+#mydiv.panel.panel-primary {
+  border-style: solid;
+  border-top: 1px solid #0831d9;
+  border-left: 1px solid #0831d9;
+  border-bottom: 1px solid #001ea0;
+  border-right: 1px solid #001ea0;
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+#mydivheader.panel-heading.title-bar {
+  height:30px;
 }
 
-.navbar a:hover {
-  background: #f1f1f1;
-  color: black;
+.log-in {
+  margin-top: 8vw;
+  margin-left: 35%;
+  max-width: fit-content;
+  max-height: 400px;
 }
 
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+.title-bar {
+  height: 30px;
+  h4 {
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+}
+
+form#new_user.new_user {
+  background-color: #dfdfdf;
+  padding: 10px;
+  box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
+}
+
+.container {
+  min-height: calc(100vh - 37px);
+}
+
+.footer {
+  background: linear-gradient(
+    180deg,
+  #0997ff,
+  #0053ee 8%,
+  #0050ee 40%,
+  #06f 88%,
+  #06f 93%,
+  #005bff 95%,
+  #003dd7 96%,
+  #003dd7);
+  height: 37px;
+}
+
+.logo-pic {
+  margin: 10px;
+}
+
+#time {
+  margin-right: 20px;
+  margin-top: 8px;
+  float: right;
+  color:white;
 }

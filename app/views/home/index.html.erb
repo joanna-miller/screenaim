@@ -8,13 +8,17 @@
   </div>
 
   <div class="col-md-3">
-  <h2>Welcome <%= current_user.username %>!</h2>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
     <div class="panel panel-primary" id="mydiv">
-      <div class="panel-heading" id="mydivheader">
-        <h3 class="panel-title">Buddy List</h3>
+      <div class="panel-heading title-bar" id="mydivheader">
+        <h3 class="panel-title title-bar-text"><%= current_user.username %></h3>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <%= link_to '<button aria-label="Close"></button>'.html_safe, destroy_user_session_path, method: :delete %>
+          </div>
       </div>
       <div class="panel-body">
+        <%= image_tag "logo.png", style: 'height:140px' %>
         <h4>Buddies (<%= User.where(online_status: true).length %>/<%= User.all.length %>)</h4>
         <ul>
           <% @users.each do |user| %>
@@ -35,4 +39,3 @@
     </div>
   </div>
 </div>
-

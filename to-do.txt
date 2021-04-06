@@ -3,12 +3,11 @@ MONDAY
 
 
 TUESDAY
-- desktop background
 - style like AIM
 - limewire, sims, minesweeper on desktop?
 - username display with messages sections
 - sent and received messages all appear on left side of window
-- draggable divs
+- draggable chat windows
 - footer
 - collapsable sections on buddy list
 
@@ -29,6 +28,8 @@ RESEARCH
 
 
 DONE
+- draggable buddy list
+- desktop background
 - real time message send and receive
 - buddy list (currently shows all users in database)
 - devise user authentication
