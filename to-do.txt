@@ -1,15 +1,6 @@
-MONDAY
-- read about ActionCable
-
-
 TUESDAY
-✓ - style like AIM
  - limewire, sims, minesweeper on desktop?
- - username display with messages sections
-✓ - sent and received messages all appear on left side of window
  - draggable chat windows
-✓ - footer
-✓ - collapsable sections on buddy list
 
 
 WEDNESDAY
@@ -19,6 +10,7 @@ WEDNESDAY
 - add bio/profile/info
 - send message with Enter key
 - add friends to buddy list
+- fix blank windows
 
 
 RESEARCH
@@ -28,13 +20,18 @@ RESEARCH
 
 
 DONE
-- draggable buddy list
-- desktop background
-- real time message send and receive
-- buddy list (currently shows all users in database)
-- devise user authentication
-- online status boolean to user, triggered by sign in/sign out
-- add sign out link
-- show online/not online buddies in different sections
-- add username to sign up and sign in forms
-- add sign up link
+✓ footer
+✓ collapsable sections on buddy list
+✓ username display with messages sections
+✓ sent and received messages all appear on left side of window
+✓ style like AIM
+✓ draggable buddy list
+✓ desktop background
+✓ real time message send and receive
+✓ buddy list (currently shows all users in database)
+✓ devise user authentication
+✓ online status boolean to user, triggered by sign in/sign out
+✓ add sign out link
+✓ show online/not online buddies in different sections
+✓ add username to sign up and sign in forms
+✓ add sign up link
