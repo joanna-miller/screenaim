@@ -32,7 +32,7 @@ An application meant to capture the essence and nostalgia that was AIM.
 ## Description
 
 It's 3:30pm. You've just sat down in the 'computer room' with a pack of gushers and an ice cold Capri Sun. Your mom just got off the phone so it's time to fire up the dial-up.
-You enter your password, click the 'sign on' button, as that magical tone takes you back to when friends were more than just friends; they were Buddies. Enjoy this little trip down memory lane while you chat like it's the year 2000. TTYL!!
+You enter your password, click 'sign on', and that magical tone takes you back to when friends were more than just friends; they were Buddies. Enjoy this little trip down memory lane while you chat like it's the year 2000. TTYL!!
 
 ## Database Schema
 The database for this application has the following tables and relationships:

@@ -9,7 +9,7 @@ class Message < ApplicationRecord
     recipient = User.find(conversation.recipient_id)
     sender = User.find(conversation.sender_id)
     if user_id == recipient.id
-      sender.username      
+      sender.username
     else
       recipient.username
     end

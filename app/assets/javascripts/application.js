@@ -12,7 +12,7 @@
     panel.find('.panel-body').toggle();
     panel.attr('class', 'panel panel-default');
 
-    if (panel.find('.panel-body').is(':visible')) {
+    if (panel.find('.panel-body').is(':visible')) {r
       var height = messages_list[0].scrollHeight;
       messages_list.scrollTop(height);
     }
@@ -69,3 +69,4 @@ function playAudio() {
 function playAudio2() {
   audio2.play();
 }
+
