@@ -11,18 +11,18 @@
     <div class="panel panel-primary buddy-list" id="mydiv">
       <div class="panel-heading title-bar" id="mydivheader">
         <h3 class="panel-title title-bar-text"><%= current_user.username %></h3>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <%= link_to '<button aria-label="Close"></button>'.html_safe, destroy_user_session_path, method: :delete %>
-          </div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <%= link_to '<button aria-label="Close" onclick="playAudio2()"></button>'.html_safe, destroy_user_session_path, method: :delete %>
+        </div>
       </div>
       <div class="panel-body">
         <%= image_tag "logo.png", style: 'height:140px' %>
         <div id="buddies">
           <div id="accordion">
             <div id="online">
-              <a onclick="myFunction('onlinelist')"><h4>Buddies (<%= User.where(online_status: true).length %>/<%= User.all.length %>)</h4></a>
+              <a onclick="myFunction('onlinelist')"><h4>Buddies (<%= User.where(online_status: true).length - 1 %>/<%= User.all.length - 1 %>)</h4></a>
               <ul id="onlinelist">
                 <% @users.each do |user| %>
                   <% if user.online_status == true %>
@@ -32,7 +32,7 @@
               </ul>
             </div>
             <div id="offline">
-              <a onclick="myFunction('offlinelist')"><h4>Offline (<%= User.where(online_status: false).length %>/<%= User.all.length %>)</h4></a>
+              <a onclick="myFunction('offlinelist')"><h4>Offline (<%= User.where(online_status: false).length %>/<%= User.all.length - 1 %>)</h4></a>
               <ul id="offlinelist">
                 <% @users.each do |user| %>
                   <% if user.online_status == false %>
@@ -47,3 +47,8 @@
     </div>
   </div>
 </div>
+<%= audio_tag "login.wav", id: 'login', autoplay: true %>
+<script>
+  var audio = document.getElementById("login");
+  audio.volume = 0.3;
+</script>

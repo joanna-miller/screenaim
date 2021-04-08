@@ -116,3 +116,27 @@ User.create(
   password: password,
   password_confirmation: password
 )
+User.create(
+  username: "bsbGurl4Eva92",
+  email: "user-19@example.com",
+  password: password,
+  password_confirmation: password
+)
+User.create(
+  username: "BAD2theB0ne94",
+  email: "user-20@example.com",
+  password: password,
+  password_confirmation: password
+)
+User.create(
+  username: "Th3Dave77",
+  email: "user-21@example.com",
+  password: password,
+  password_confirmation: password
+)
+User.create(
+  username: "B1GbadB0bbY89",
+  email: "user-22@example.com",
+  password: password,
+  password_confirmation: password
+)

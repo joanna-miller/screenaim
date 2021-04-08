@@ -1,6 +1,6 @@
 <div class="log-in">
-  <div class="title-bar">
-    <h4 class="title-bar-text">Log in</h4>
+  <div class="title-bar signon-window-header">
+    <h4 class="title-bar-text">Sign On</h4>
       <div class="title-bar-controls">
         <button aria-label="Minimize"></button>
         <button aria-label="Maximize"></button>
@@ -29,8 +29,13 @@
     <%= f.hidden_field(:online_status, :value => true) %>
 
     <div class="actions">
-      <%= f.submit "Log in" %>
+      <%= f.submit "Sign On" %>
     </div>
   <%= link_to "Sign Up", new_user_registration_path %>
   <% end %>
 </div>
+<%= audio_tag "logout.wav", id: 'logout', autoplay: true%>
+<script>
+  var audio2 = document.getElementById("logout");
+  audio2.volume = 0.4;
+</script>

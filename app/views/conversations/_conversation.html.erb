@@ -1,28 +1,36 @@
 <li>
-  <div class="panel panel-default chat-window" data-conversation-id="<%= conversation.id %>">
-    <div class="panel-heading title-bar">
-      <h3 class="panel-title title-bar-text">
-        <%= conversation.opposed_user(user).username %></h3>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <%= link_to '<button aria-label="Close"></button>'.html_safe, close_conversation_path(conversation), remote: true, method: :post %>
-        </div>
+  <script>
+    dragElement(document.getElementById("<%= conversation.id %>"));
+  </script>
+  <div class="panel panel-default chat-window" data-conversation-id="<%= conversation.id %>" id="<%= conversation.id %>">
+    <div class="panel-heading title-bar chat-window-header" id="<%= conversation.id %>header">
+      <h3 class="panel-title title-bar-text"><%= conversation.opposed_user(user).username %></h3>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <%= link_to '<button aria-label="Close"></button>'.html_safe, close_conversation_path(conversation), remote: true, method: :post %>
+      </div>
     </div>
-
     <div class="panel-body" style="display: none;">
       <div class="messages-list">
-        <ul>
-          <%= render 'conversations/conversation_content', messages: conversation.messages, user: user %>
-        </ul>
+        <ul><%= render 'conversations/conversation_content', messages: conversation.messages, user: user %></ul>
       </div>
-        <form class="new_message">
-          <input name="conversation_id" type="hidden" value="<%= conversation.id %>">
-          <input name="user_id" type="hidden" value="<%= user.id %>">
-          <textarea name="body" class="form-control"></textarea>
-          <span><%= image_tag "chat-icons.png", id: 'chat-icons'%><input type="image" src="../app/assets/images/send_icon.png" alt="Submit" class="pull-right" value="Send"></span>
-        </form>
+      <form class="new_message">
+        <input name="conversation_id" type="hidden" value="<%= conversation.id %>">
+        <input name="user_id" type="hidden" value="<%= user.id %>">
+        <textarea name="body" class="form-control textarea"></textarea>
+        <span><%= image_tag "chat_icons.png", id: 'chat-icons'%><%= image_submit_tag "send_icon.png", class: "pull-right", value: "Send" %></span>
+      </form>
     </div>
   </div>
+  <%# <script>
+    $(".textarea").keypress(function (e) {
+      if(e.which === 13 && !e.shiftKey) {
+        e.preventDefault();
+        $(this).closest("form").submit();
+      }
+    });
+  </script> %>
 </li>
-<%# <input type="submit" class="pull-right" value="Send"> %>
+
+<%#old line14 <div class="panel-body" style="display: none;"> %>
