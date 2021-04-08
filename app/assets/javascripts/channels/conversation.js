@@ -2,7 +2,9 @@ App.conversation = App.cable.subscriptions.create("ConversationChannel", {
   connected: function() {
 
   },
-  disconnected: function() {},
+  disconnected: function() {
+
+  },
   received: function(data) {
     var conversation = $('#conversations-list').find("[data-conversation-id='" + data['conversation_id'] + "']");
 
@@ -44,5 +46,3 @@ $(document).on('submit', '.new_message', function(e) {
   App.conversation.speak(values);
   $(this).trigger('reset');
 });
-
-

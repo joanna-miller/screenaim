@@ -5,7 +5,7 @@
       <span id="red"><%= "#{user.username}:" %></span>
     <% else %>
       <span id="blue"><%= "#{Message.get_opposed_user(user.id, message.conversation_id)}:" %></span>
-    <% end %> 
+    <% end %>
       <%= message.body %>
     </div>
   </div>
