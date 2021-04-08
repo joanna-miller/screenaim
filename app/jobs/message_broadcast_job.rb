@@ -41,4 +41,5 @@ class MessageBroadcastJob < ApplicationJob
       locals: { conversation: conversation, user: user }
     )
   end
+
 end

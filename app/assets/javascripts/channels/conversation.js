@@ -38,15 +38,6 @@ App.conversation = App.cable.subscriptions.create("ConversationChannel", {
   }
 });
 
-$(function() {
-  $('.new_message').keypress(function(e){
-    if(e.which == 13){
-      e.preventDefault();
-      $(this).closest('form').submit();
-    }
-  });
-})
-
 $(document).on('submit', '.new_message', function(e) {
   e.preventDefault();
   var values = $(this).serializeArray();

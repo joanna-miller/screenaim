@@ -1,39 +1,36 @@
-MONDAY
-- read about ActionCable
-
-
-TUESDAY
-- desktop background
-- style like AIM
-- limewire, sims, minesweeper on desktop?
-- username display with messages sections
-- sent and received messages all appear on left side of window
-- draggable divs
-- footer
-- collapsable sections on buddy list
-
-
-WEDNESDAY
-- sounds effects (should these go in message_broadcast_job?)
+THURSDAY(Stretch goals, not super important)
+- send message with Enter key
+- fix blank windows
 - away message (active/inactive boolean?)
 - gif API
 - add bio/profile/info
-- send message with Enter key
 - add friends to buddy list
+
 
 
 RESEARCH
 - jobs
 - js in rails
-- jquery ui draggable widget
+
 
 
 DONE
-- real time message send and receive
-- buddy list (currently shows all users in database)
-- devise user authentication
-- online status boolean to user, triggered by sign in/sign out
-- add sign out link
-- show online/not online buddies in different sections
-- add username to sign up and sign in forms
-- add sign up link
+✓ sounds effects (should these go in message_broadcast_job?)
+✓ limewire, sims, minesweeper on desktop?
+✓ draggable chat windows
+✓ footer
+✓ collapsable sections on buddy list
+✓ username display with messages sections
+✓ sent and received messages all appear on left side of window
+✓ style like AIM
+✓ draggable buddy list
+✓ desktop background
+✓ real time message send and receive
+✓ buddy list (currently shows all users in database)
+✓ devise user authentication
+✓ online status boolean to user, triggered by sign in/sign out
+✓ add sign out link
+✓ show online/not online buddies in different sections
+✓ add username to sign up and sign in forms
+✓ add sign up link
+✓ add checkmarks to things that are done, cuz I'm fly like that
